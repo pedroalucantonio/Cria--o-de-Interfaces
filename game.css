@@ -1,0 +1,89 @@
+html {
+    scrollbar-gutter: stable;
+}
+
+.game-page {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: stretch;
+    max-width: 1100px;
+    margin: 32px auto;
+    padding: 0 20px;
+}
+
+.game-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 36px;
+}
+
+.game-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: min(60vh, 480px);
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.game-info h1 {
+    margin-bottom: 16px;
+}
+
+.game-info .description {
+    line-height: 1.7;
+}
+
+.store-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.store-button {
+    display: inline-block;
+    padding: 12px 18px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: filter 0.2s ease, transform 0.2s ease;
+}
+
+.store-button:hover {
+    filter: brightness(1.15);
+    transform: translateY(-2px);
+}
+
+.store-button.steam {
+    background-color: #171a21;
+}
+
+.store-button.xbox {
+    background-color: #107c10;
+}
+
+.store-button.playstation {
+    background-color: #003791;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 24px;
+    color: inherit;
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .game-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .game-image {
+        max-height: 320px;
+    }
+}

@@ -20,7 +20,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(163, 245, 0);
+    background-color: #d9e2d0;
 }
 
 body.dark-mode header {
@@ -52,7 +52,7 @@ input {
 
 h1 {
     font-size: 24px;
-    color: #333;
+    color: #000000;
 }
 
  .dropdown {
@@ -123,4 +123,5 @@ a {
     background-color: rgb(190, 190, 190);
     width: 20px;
     height: 20px;
+    font-weight: bold;
 }
